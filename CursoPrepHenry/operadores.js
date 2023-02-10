@@ -31,8 +31,8 @@ El operador de adición nos va a permitie concatenar strings */
 console.log('Hola ' + 'Camilo ');
 
 // utilizando variables:
-var nombre = 'Camilo ';
-var saludo = 'Hola ' + nombre;
+let nombre = 'Camilo ';
+let saludo = 'Hola ' + nombre;
 console.log(saludo);
 
 /* Anteriormente conocimos los operadores básicos y su precedencia, 
@@ -64,12 +64,12 @@ console.log (7 === "7"); // false
 //Asignación y asociatividad
 /* Nos permite identificar que operación se ejecuta primero
 Se empieza a operar de derecha a izquierda */
-var a = 1;
-var b = 2;
+let a = 1;
+let b = 2;
 console.log(a = b); // 2
 console.log(b); // 2
 
-var c = a = b;
+let c = a = b;
 console.log (c); // 2
 
 console.log(16 / 2 / 4);  // 16/2 = 8  8/4=2  --> 2

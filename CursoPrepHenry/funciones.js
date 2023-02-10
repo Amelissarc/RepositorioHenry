@@ -67,7 +67,7 @@ function cuidadoConElReturn(nombre) {
 // Para para probar los return llamamos la función y colocamos un valor ejemplo cuidadoConElReturn("Camilo")  ---> 'Camilo'
 
 //Precedencia de valores
-var a = 1;
-var b = 2;
-var c = a = b;
+let a = 1;
+let b = 2;
+let c = a = b;
 console.log (c); 
