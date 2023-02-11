@@ -37,3 +37,35 @@ console.log(elementoDelArray);
 // Lenght -> Nos permite saber cuantos elementos tiene un arreglo, es decir cual es su extención
 let nombres = ['Matias', 'Maria', 'Diego', 'Rosa'].length;
 console.log(nombres);
+
+/* Blucles */
+
+/* eL bucle FOR trabaja con un número determinado de repeticiones
+el bucle WHILE trabaja con condiciones */
+
+let arr = [1, 2, 3, 4, 5];
+
+for(var i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+function encontrarLetraP(string){
+    var letras = string.split('');
+    
+    for(let i = 0; i < letras.length; i++){
+        if(letras[i] === 'P') {
+            return true;
+        }
+    }
+}
+
+encontrarLetraP('Peter');
+encontrarLetraP('Henry');
+
+var array = [];
+
+while(array.length < 5){
+    array.push('BOOM');
+}
+
+console.log(array);

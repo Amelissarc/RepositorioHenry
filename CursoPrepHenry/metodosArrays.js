@@ -10,11 +10,13 @@ Métodos más utilizados:
 
 /* 1. El método push() añade uno o más elementos al final de un arreglo, 
 y devuelve la nueva longitud del array. */
+// PUSH y UNSHIFT
 var colores = ['amarillo', 'azul'];
 colores.push('verde');
 console.log(colores); // [ 'amarillo', 'azul', 'verde' ]
 
 /* 2. El método pop() elimina y devuelve el último elemento de un arreglo. */
+// POP y SHIFT
 var colores = ['amarillo', 'azul'];
 colores.pop();
 console.log(colores); // [ 'amarillo' ]
@@ -40,11 +42,13 @@ console.log(colores);  // [ 'amarillo', 'azul' ]
 
 /* 1. El método includes() determina si un arreglo incluye o contiene un elemento específico. 
 Devuelve true o false en cada caso. */
+// INCLUDES
 let pintores = ['Picasso', 'Velazquez', 'Van Gogh', 'Dali'];
 let includes = pintores.includes('Picasso');
 console.log(includes);  // true
 
 /* 2. El método every() determina si todos los elementos en un arreglo satisfacen una misma condición. */
+// EVERY
 let numeros = [1, 6, 8, 9];
 let cumplenCondicion = numeros.every((num) => {
     return num > 5;
@@ -53,6 +57,7 @@ console.log(cumplenCondicion);  // false
 
 /* 3. El método split() convierte un string en un arreglo, donde cada elemento contendrá un sub-string, 
 dependiendo del parámetro divisor que indiquemos. */
+// SPLIT
 let palabra = 'Henri';
 let palabraSeparada = palabra.split(' ');
 palabraSeparada.pop(); // elimina el último elemento del arreglo
@@ -61,12 +66,14 @@ palabraSeparada.push('y'); // agrega un elemento al final del arreglo
 
 /* 4. El método join() convierte un arreglo en un string, 
 uniendo todos los elementos de este en una misma cadena. */
+// JOIN
 let palabraArreglada = palabraSeparada.join(' '); // convierte el arreglo a string
 console.log(palabraArreglada);  // 'Henry'
 
 // Métodos de recorrido:
 
 /* 1. El método forEach() nos permite recorrer un arreglo, realizando alguna acción en para cada elemento.*/
+// FOREACH
 let numeroS = [1, 2, 3, 4];
 // numeroS.forEach((num) => console.log(num)); // 1 2 3 4 5
 numeroS.forEach((num) => {
@@ -76,7 +83,7 @@ numeroS.forEach((num) => {
 });
 
 /* 2. El método map() también nos permite recorrer un arreglo y realizar una acción por cada elemento. La diferencia es que este método devuelve un nuevo arreglo los elementos modificados. */
-
+// MAP
 let masUno = numeros.map((num) => {
     return num + 1;
 });
