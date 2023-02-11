@@ -80,4 +80,4 @@ var n = 1;
 
 while (n < 3) {
     arr.push(Math.random());
-}  // no debemos correr codigos así
+}  // no debemos correr codigos así. 
